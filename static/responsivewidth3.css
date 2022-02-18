@@ -1,0 +1,35 @@
+.text{
+    font-size: 15px;
+}
+.h-primary{
+    font-size: 1.5rem;
+}
+h3.h-primary{
+    font-size: 0.9rem;
+}
+.p-primary{
+    font-size: 0.8rem;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 0.65rem;
+}
+
+#services img{
+    height: 100px;
+    width: 100px;
+}
+
+input#search{
+    font-size: 14px;
+}
+.contact{
+    font-size: 14px;
+}
+
+.btn{
+    font-size: 15px;
+}
+.btn1{
+    font-size: 15px;
+}

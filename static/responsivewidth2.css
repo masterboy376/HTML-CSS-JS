@@ -1,0 +1,39 @@
+.text{
+    font-size: 14px;
+}
+.h-primary{
+    font-size: 1.7rem;
+}
+h3.h-primary{
+    font-size: 1rem;
+}
+.p-primary{
+    font-size: 0.8rem;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+#services img{
+    height: 150px;
+    width: 150px;
+}
+
+.sponsors-container{
+    margin: 15px 15px;
+}
+.partners{
+    margin: 10px 10px;
+}
+.contact-section{
+    margin: 15px 15px;
+}
+.foot-para{
+    padding: 15px;
+    }
+
+    .partners img{
+        flex-direction: column;
+        height: 150px;
+    }

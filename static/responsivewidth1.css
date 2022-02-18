@@ -1,0 +1,54 @@
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul{
+    padding-bottom: 15px;
+}
+
+/* home */
+
+
+/* services */
+#services{
+    flex-direction: column;
+}
+
+
+/* sponsors */
+.partners{
+    flex-direction: column;
+}
+.partners img{
+    flex-direction: column;
+    height: 250px;
+}
+#s1{
+    align-self: center;
+}
+#s2{
+    align-self:center;
+}
+#s3{
+    align-self: center;
+}
+#s4{
+    align-self:center;
+}
+
+
+/* contact */
+
+
+
+/* footer */
+
+
+/* utilities class */
+div.search{
+    padding-top: 100px;
+    width: 90%;
+}
+input#search{
+    width: 75%;
+}

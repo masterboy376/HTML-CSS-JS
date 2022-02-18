@@ -1,0 +1,295 @@
+/* utility class */
+.text{
+    font-size: 20px;
+    font-style: oblique;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--background-color3);
+}
+.h-primary{
+    font-size: 3rem;
+    color: var(--background-color3);
+    padding: 3px;
+}
+h3.h-primary{
+    font-size: 1.7rem;
+    color: var(--background-color3);
+    padding: 3px;
+}
+.p-primary{
+    font-size: 1.5rem;
+    color: var(--background-color3);
+    padding: 12px;
+}
+.center{
+    text-align: center;
+    color: rgb(41, 40, 40);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn{
+    font-size: 20px;
+    padding: 20px 80px;
+    font-weight: bold;
+    background: none;
+    margin: 20px 0px;
+    background-color: none;
+    border:2px solid var(--background-color2);
+    color: var(--background-color2);
+    border-radius: 7px;
+    transition: all 0.5s ease-in-out 0s;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: var(--background-color2);
+    border:2px solid var(--background-color2);
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+}
+div.search{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input#search{
+    font-size: 17px;
+    outline: none;
+    margin: 0px 5px;
+    width: 50%;
+    padding: 15px 20px;
+    border-radius: 7px;
+    border: none;
+    opacity: 0.8;
+}
+.btn1{
+    font-size: 20px;
+    padding: 15px 20px;
+    margin: 0px 5px;
+    background-color: var(--background-color2);
+    border:2px solid var(--background-color2);
+    color: white;
+    border-radius: 7px;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out 0s;
+}
+.btn1:hover{
+    transform: scale(1.1);
+}
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* css variables */
+:root{
+    --background-color1: rgba(253, 220, 33, 0.973);
+    --background-color2: rgb(255, 94, 0);
+    --background-color3: rgb(255, 255, 255);
+    --color1: rgb(102, 102, 102);
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+#navbar::before{
+    content: "";
+    background-color: var(--background-color1);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* navigation bar: logo */
+#logo{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+}
+#logo span{
+    margin: 0px 10px;
+}
+span#a{
+    font-size: 30px;
+    font-family: fantasy;
+}
+span#b{
+    font-size: 15px;
+    font-family: monospace;
+    align-self: center;
+}
+
+
+/* navigation bar: list items */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+   text-decoration: none;
+   color: var(--color1);
+   padding: 10px 15px;
+}
+#navbar ul li a:hover{
+   color: black;
+   font-weight: 100;
+   border-radius: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 595px;
+}
+#home::before{
+    content: "";
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    height: 595px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.8;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+/* Services section */
+#services{
+    margin: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+#services .box{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px 20px;
+    background-color: rgb(247, 245, 245);
+    box-shadow: 10px 10px 10px 2px rgb(209, 208, 208);
+}
+#services img{
+    display: block;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+}
+#services h3{
+    margin: 10px;
+}
+#services button{
+    margin: 10px;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+/* sponsor section */
+.sponsors-container{
+    margin: 35px 35px;
+    border-radius: 10px;
+}
+#sponsors{
+    display: flex;
+    flex-direction: column;
+}
+.partners{
+    width: 85%;
+    background-color: rgb(53, 52, 52);
+    border-radius: 10px;
+    margin: 25px 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 10px 2px rgb(197, 195, 195);
+}
+.partners img{
+    height: 300px;
+    width: 50%;
+    padding: 20px;
+}
+.partners p{
+    padding: 20px;
+}
+#s1{
+    align-self: flex-start;
+}
+#s2{
+    align-self: flex-end;
+}
+#s3{
+    align-self: flex-start;
+}
+#s4{
+    align-self: flex-end;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+/* contact section */
+.contact-section{
+    margin: 35px 35px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+.form form{
+    border-radius: 10px;
+    padding: 20px 20px;
+    background-color: rgb(247, 245, 245);
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px 2px rgb(209, 208, 208);
+}
+.contact{
+    font-size: 17px;
+    outline: none;
+    margin: 10px 10px;
+    width: 90%;
+    padding: 15px 20px;
+    border-radius: 7px;
+    border: none;
+    opacity: 0.8;
+}
+.sub-btn{
+    width: 90%;
+}
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* footer */
+.foot{
+    text-align: center;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+.foot-para{
+padding: 30px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
